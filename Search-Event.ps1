@@ -22,7 +22,7 @@ function Search-Event {
         [datetime]$endtime,
 		
 	[Parameter(Mandatory=$False)]
-        [datetime]$raw
+        [switch]$raw=$False
     )
 
     $filter = @{
