@@ -9,10 +9,10 @@ function Search-Event {
         [Parameter(Mandatory=$False)]
         [string]$value=$null,
 		
-		[Parameter(Mandatory=$False)]
+	[Parameter(Mandatory=$False)]
         [int]$eventid=$null,
 		
-		[Parameter(Mandatory=$False)]
+	[Parameter(Mandatory=$False)]
         [string]$logname,
         
         [Parameter(Mandatory=$False)]
@@ -21,7 +21,7 @@ function Search-Event {
         [Parameter(Mandatory=$False)]
         [datetime]$endtime,
 		
-		[Parameter(Mandatory=$False)]
+	[Parameter(Mandatory=$False)]
         [datetime]$raw
     )
 
@@ -29,9 +29,9 @@ function Search-Event {
         logname=$logname;
     }
 	
-	if($eventid) {
-		$filter['id'] = $eventid
-	}
+    if($eventid) {
+	$filter['id'] = $eventid
+    }
 
     if($starttime) {
         $filter['StartTime'] = $starttime
